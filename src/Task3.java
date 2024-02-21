@@ -5,8 +5,28 @@ public class Task3 {
         String[] arr3 = new String[2];
         arr3[0] = "yes";
         arr3[1] = "no";
-        System.out.println(arr1[2] + ", " + arr1[1] + ", " + arr1[0]);
-        System.out.println(arr2[2] + ", " + arr2[1] + ", " + arr2[0]);
-        System.out.println(arr3[1] + ", " + arr3[0]);
+
+        for (int i = arr1.length - 1; i >= 0; i--) {
+            System.out.print(arr1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
+            }
+        }
+        for (int i = arr2.length - 1; i >= 0; i--) {
+            System.out.print(arr2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
+            }
+        }
+        for (int i = arr3.length - 1; i >= 0; i--) {
+            System.out.print(arr3[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
     }
 }
